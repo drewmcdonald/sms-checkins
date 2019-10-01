@@ -1,2 +1,3 @@
-# sms-checkins
-have twilio text me questions and record my responses in a google sheet
+# slack-checkins
+
+have slack ask me questions; record my responses in a google sheet
