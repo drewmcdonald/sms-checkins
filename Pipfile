@@ -4,14 +4,18 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+black = "==19.3b0"
+flake8 = "*"
+isort = "*"
+mypy = "*"
+pytest = "*"
 
 [packages]
 click = "*"
+datasheets = "*"
 flask = "*"
-gspread = "*"
-oauth2client = "*"
 Python-dotenv = "*"
-twilio = "*"
+requests = "*"
 
 [requires]
 python_version = "3.6"

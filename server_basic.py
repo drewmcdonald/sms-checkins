@@ -1,6 +1,6 @@
-from flask import Flask, request, redirect
-from twilio.twiml.messaging_response import Message, MessagingResponse
+from flask import Flask, redirect, request
 
+from twilio.twiml.messaging_response import Message, MessagingResponse
 
 app = Flask(__name__)
 
