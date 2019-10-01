@@ -1,24 +1,15 @@
-from flask import Flask, redirect, request
-
-from twilio.twiml.messaging_response import Message, MessagingResponse
+from flask import Flask
 
 app = Flask(__name__)
 
 
-def process_message(message: str) -> None:
-    pass
+def process_message(message: str) -> str:
+    return message
 
 
 @app.route("/response", methods=["POST"])
-def inbound_sms():
-    message = request.values.get("Body", None)
-
-    if message == "pause":
-        resp = MessagingResponse()
-        resp.message("okay, okay...")
-        return str(resp)
-
-    return process_message(message)
+def response():
+    pass
 
 
 if __name__ == "__main__":
